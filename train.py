@@ -14,7 +14,7 @@ from core.models import (
     yolo_anchors, yolo_anchor_masks
 )
 from core.utils import freeze_all
-import yolov3_tf2.dataset as dataset
+import core.dataset as dataset
 
 flags.DEFINE_string('dataset', './data/voc2012_train.tfrecord', 'path to dataset')
 flags.DEFINE_string('val_dataset', './data/voc2012_val.tfrecord', 'path to validation dataset')
